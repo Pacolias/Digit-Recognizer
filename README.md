@@ -4,7 +4,7 @@
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 ![Data](https://img.shields.io/badge/Data-MNIST-lightgrey)
 
-Este proyecto implementa un flujo de trabajo (pipeline) completo de Machine Learning para la clasificación de dígitos manuscritos (MNIST Dataset). El sistema está construido de forma modular en **R**, utilizando técnicas de reducción de dimensionalidad (**PCA**) y un **Stacking Ensemble** (Random Forest + SVM) para maximizar la precisión.
+Este proyecto implementa un flujo de trabajo (pipeline) completo de Machine Learning para la clasificación de dígitos manuscritos (MNIST Dataset). El sistema está construido de forma modular en **R**, utilizando técnicas de reducción de dimensionalidad (**PCA**) y un **Stacking Ensemble** (Random Forest + SVM + Árbol de decisión + Perceptrón Multicapa) para maximizar la precisión.
 
 ## 📂 Estructura del Proyecto
 
