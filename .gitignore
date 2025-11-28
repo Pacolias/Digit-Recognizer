@@ -1,3 +1,2 @@
-project/data/processed/train_var.rds
-project/models/models_base.rds
-project/models/models_base.rds
+project/data/processed/
+project/models
