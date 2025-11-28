@@ -15,8 +15,9 @@ cat("Evaluando en set de validación...\n")
 pred_rf  <- predict(model_rf, valid, type = "prob")
 pred_svm <- predict(model_svm, valid, type = "prob")
 
-# Crear dataset meta
-meta_valid <- data.frame(pred_rf, pred_svm)
+# Crear dataset meta (MISMOS CAMBIOS QUE EN SCRIPT 6)
+meta_valid <- bind_cols(pred_rf, pred_svm)
+colnames(meta_valid) <- make.names(colnames(meta_valid), unique = TRUE)
 
 # Predicción Final
 final_probs <- predict(meta_model, meta_valid, type = "class")
