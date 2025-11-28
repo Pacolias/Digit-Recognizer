@@ -2,45 +2,45 @@ Confusion Matrix and Statistics
 
           Reference
 Prediction  L0  L1  L2  L3  L4  L5  L6  L7  L8  L9
-        L0 364   0   5   0   1   0   0   2   2   2
-        L1   0 417   3   1   5   0   1   4  11   0
-        L2   4   3 331  16   8   3  10  10  10   7
-        L3   5   6  20 329   2  22   5   9  23  13
-        L4   1   1   7   4 337   5  11  14   7  31
-        L5  10   1   6  27   7 278  20   5  40   4
-        L6   9   5   6   3   3  17 327   3   6   1
-        L7   2   1   8   5   6   4   1 334   4  33
-        L8   4   7  14  23   4  37   9   8 274  13
-        L9   0   0   3   7  15   3   0  36   8 282
+        L0 364   0   3   0   0   0   1   1   1   1
+        L1   0 416   2   3   3   0   3   6  16   0
+        L2   5   3 347  14   4   2  13   4   5   1
+        L3   4   2  13 342   0  32   1   8  15  10
+        L4   2   0   6   3 347   6   5   7   5  29
+        L5   8   2   7  15   2 284  10   1  28   3
+        L6  14   4   4   1   7  10 345   0   6   1
+        L7   0   3   5   9   6   2   0 367   3  21
+        L8   2  10  15  25  10  27   6   3 299   8
+        L9   0   1   1   3   9   6   0  28   7 312
 
 Overall Statistics
-                                         
-               Accuracy : 0.8193         
-                 95% CI : (0.807, 0.8311)
-    No Information Rate : 0.1104         
-    P-Value [Acc > NIR] : < 2.2e-16      
-                                         
-                  Kappa : 0.7991         
-                                         
- Mcnemar's Test P-Value : NA             
+                                          
+               Accuracy : 0.8568          
+                 95% CI : (0.8456, 0.8675)
+    No Information Rate : 0.1104          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.8409          
+                                          
+ Mcnemar's Test P-Value : NA              
 
 Statistics by Class:
 
                      Class: L0 Class: L1 Class: L2 Class: L3 Class: L4
-Sensitivity            0.91228    0.9456   0.82134   0.79277   0.86856
-Specificity            0.99666    0.9930   0.98023   0.97067   0.97754
-Pos Pred Value         0.96809    0.9434   0.82338   0.75806   0.80622
-Neg Pred Value         0.99033    0.9932   0.97996   0.97585   0.98574
+Sensitivity            0.91228    0.9433   0.86104   0.82410   0.89433
+Specificity            0.99805    0.9907   0.98580   0.97626   0.98253
+Pos Pred Value         0.98113    0.9265   0.87186   0.80094   0.84634
+Neg Pred Value         0.99034    0.9929   0.98443   0.97954   0.98856
 Prevalence             0.09987    0.1104   0.10088   0.10388   0.09712
-Detection Rate         0.09111    0.1044   0.08285   0.08235   0.08436
-Detection Prevalence   0.09412    0.1106   0.10063   0.10864   0.10463
-Balanced Accuracy      0.95447    0.9693   0.90079   0.88172   0.92305
+Detection Rate         0.09111    0.1041   0.08686   0.08561   0.08686
+Detection Prevalence   0.09287    0.1124   0.09962   0.10688   0.10263
+Balanced Accuracy      0.95517    0.9670   0.92342   0.90018   0.93843
                      Class: L5 Class: L6 Class: L7 Class: L8 Class: L9
-Sensitivity            0.75339   0.85156   0.78588   0.71169   0.73057
-Specificity            0.96691   0.98532   0.98207   0.96704   0.98005
-Pos Pred Value         0.69849   0.86053   0.83920   0.69720   0.79661
-Neg Pred Value         0.97470   0.98423   0.97470   0.96918   0.97144
+Sensitivity            0.76965   0.89844   0.86353   0.77662   0.80829
+Specificity            0.97904   0.98698   0.98627   0.97064   0.98476
+Pos Pred Value         0.78889   0.88010   0.88221   0.73827   0.85014
+Neg Pred Value         0.97662   0.98918   0.98379   0.97604   0.97960
 Prevalence             0.09237   0.09612   0.10638   0.09637   0.09662
-Detection Rate         0.06959   0.08185   0.08360   0.06859   0.07059
-Detection Prevalence   0.09962   0.09512   0.09962   0.09837   0.08861
-Balanced Accuracy      0.86015   0.91844   0.88398   0.83936   0.85531
+Detection Rate         0.07109   0.08636   0.09186   0.07484   0.07810
+Detection Prevalence   0.09011   0.09812   0.10413   0.10138   0.09186
+Balanced Accuracy      0.87434   0.94271   0.92490   0.87363   0.89653
