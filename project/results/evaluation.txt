@@ -1,46 +1,56 @@
+--- COMPARATIVA DE TIEMPOS Y ACCURACY ---
+         Model Accuracy Time_Secs
+1 RandomForest   0.7801    0.1529
+2          SVM   0.5696    1.2209
+3        Arbol   0.7122    0.3674
+4         NNet   0.8461      0.45
+5     Ensemble   0.8942    0.0129
+
+
+--- MATRIZ DE CONFUSIÓN DETALLADA (ENSEMBLE) ---
 Confusion Matrix and Statistics
 
           Reference
 Prediction  L0  L1  L2  L3  L4  L5  L6  L7  L8  L9
-        L0 364   0   3   0   0   0   1   1   1   1
-        L1   0 416   2   3   3   0   3   6  16   0
-        L2   5   3 347  14   4   2  13   4   5   1
-        L3   4   2  13 342   0  32   1   8  15  10
-        L4   2   0   6   3 347   6   5   7   5  29
-        L5   8   2   7  15   2 284  10   1  28   3
-        L6  14   4   4   1   7  10 345   0   6   1
-        L7   0   3   5   9   6   2   0 367   3  21
-        L8   2  10  15  25  10  27   6   3 299   8
-        L9   0   1   1   3   9   6   0  28   7 312
+        L0 771   0   6   0   1   5   3   1   2   2
+        L1   0 901   7   7   4   2   3   7   9   1
+        L2  12   9 736  25  13  13  16  14  25   2
+        L3   3   4  35 738   2  37   1  10  27   7
+        L4   3   2   9   0 735   6   6  13   3  32
+        L5  11   1   4  45   9 639  13   3  35   8
+        L6  21   1  12   3   8  11 778   0   5   0
+        L7   2   6  13  14   5   5   3 795   7  40
+        L8   2  11  10  30   5  28   4   6 683  13
+        L9   1   1   3   8  32  13   0  31  16 732
 
 Overall Statistics
                                           
-               Accuracy : 0.8568          
-                 95% CI : (0.8456, 0.8675)
-    No Information Rate : 0.1104          
+               Accuracy : 0.8942          
+                 95% CI : (0.8875, 0.9007)
+    No Information Rate : 0.1115          
     P-Value [Acc > NIR] : < 2.2e-16       
                                           
-                  Kappa : 0.8409          
+                  Kappa : 0.8824          
                                           
  Mcnemar's Test P-Value : NA              
 
 Statistics by Class:
 
                      Class: L0 Class: L1 Class: L2 Class: L3 Class: L4
-Sensitivity            0.91228    0.9433   0.86104   0.82410   0.89433
-Specificity            0.99805    0.9907   0.98580   0.97626   0.98253
-Pos Pred Value         0.98113    0.9265   0.87186   0.80094   0.84634
-Neg Pred Value         0.99034    0.9929   0.98443   0.97954   0.98856
-Prevalence             0.09987    0.1104   0.10088   0.10388   0.09712
-Detection Rate         0.09111    0.1041   0.08686   0.08561   0.08686
-Detection Prevalence   0.09287    0.1124   0.09962   0.10688   0.10263
-Balanced Accuracy      0.95517    0.9670   0.92342   0.90018   0.93843
+Sensitivity            0.93341    0.9626   0.88144    0.8483   0.90295
+Specificity            0.99736    0.9946   0.98294    0.9833   0.99024
+Pos Pred Value         0.97472    0.9575   0.85087    0.8542   0.90853
+Neg Pred Value         0.99277    0.9953   0.98685    0.9825   0.98959
+Prevalence             0.09838    0.1115   0.09945    0.1036   0.09695
+Detection Rate         0.09183    0.1073   0.08766    0.0879   0.08754
+Detection Prevalence   0.09421    0.1121   0.10303    0.1029   0.09636
+Balanced Accuracy      0.96539    0.9786   0.93219    0.9158   0.94659
                      Class: L5 Class: L6 Class: L7 Class: L8 Class: L9
-Sensitivity            0.76965   0.89844   0.86353   0.77662   0.80829
-Specificity            0.97904   0.98698   0.98627   0.97064   0.98476
-Pos Pred Value         0.78889   0.88010   0.88221   0.73827   0.85014
-Neg Pred Value         0.97662   0.98918   0.98379   0.97604   0.97960
-Prevalence             0.09237   0.09612   0.10638   0.09637   0.09662
-Detection Rate         0.07109   0.08636   0.09186   0.07484   0.07810
-Detection Prevalence   0.09011   0.09812   0.10413   0.10138   0.09186
-Balanced Accuracy      0.87434   0.94271   0.92490   0.87363   0.89653
+Sensitivity            0.84190   0.94075   0.90341   0.84113   0.87455
+Specificity            0.98311   0.99194   0.98736   0.98563   0.98611
+Pos Pred Value         0.83203   0.92729   0.89326   0.86237   0.87455
+Neg Pred Value         0.98427   0.99352   0.98868   0.98304   0.98611
+Prevalence             0.09040   0.09850   0.10481   0.09671   0.09969
+Detection Rate         0.07611   0.09266   0.09469   0.08135   0.08718
+Detection Prevalence   0.09147   0.09993   0.10600   0.09433   0.09969
+Balanced Accuracy      0.91250   0.96635   0.94538   0.91338   0.93033

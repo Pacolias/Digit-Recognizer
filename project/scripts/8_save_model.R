@@ -29,5 +29,7 @@ meta_small$label <- train_small$label
 meta_model_small <- multinom(label ~ ., data = meta_small, trace = FALSE, MaxNWts = 5000)
 
 output_path <- here::here("models", "final_model_100.rds")
-saveRDS(meta_model_small, output_path)
-cat(">>> MODELO FINAL (100 casos) guardado correctamente con los 4 algoritmos.\n")
+save(meta_model_small, file = here::here("models", "final_model_100.RData"))
+
+cat(">>> MODELO FINAL (100 casos) guardado como .RData (formato save).\n")
+cat(">>> Ruta: models/final_model_100.RData\n")

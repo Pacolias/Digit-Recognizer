@@ -35,10 +35,10 @@ train_proc <- bind_cols(label = labels, pixels_scaled)
 # ==============================================================================
 # PASO DE SEGURIDAD RAM: Reducir el dataset (Solo para pruebas)
 # ==============================================================================
-cat(">>> REDUCIENDO DATASET a 20000 filas para evitar colapso de memoria...\n")
-set.seed(123) 
-filas_seguras <- sample(nrow(train_proc), 20000)
-train_proc <- train_proc[filas_seguras, ] 
+#cat(">>> REDUCIENDO DATASET a 20000 filas para evitar colapso de memoria...\n")
+#set.seed(123) 
+#filas_seguras <- sample(nrow(train_proc), 20000)
+#train_proc <- train_proc[filas_seguras, ] 
 # ==============================================================================
 
 # 4. Particionar: train (80%) / validation (20%)
